@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Invest4me.Views.Pages.Deposit">
+    <ScrollView Margin="15,0,15,0">
+        <StackLayout >
+            <Entry Placeholder="Fist name" HorizontalOptions="FillAndExpand"
+                   FontSize="15" Text="{Binding Fname}"/>
+            <Entry Placeholder="Last name" HorizontalOptions="FillAndExpand"
+                   FontSize="15" Text="{Binding Lname}"/>
+            <Label Text="Use your active phone number because you will get notifications of your returns in real-time."/>
+            <Entry Placeholder="Phone number" HorizontalOptions="FillAndExpand"
+                   FontSize="15" Text="{Binding phoner}"/>
+            <Label Text="Use your active Email address so as to get notifications of your returns in real-time."/>
+
+            <Entry Placeholder="Email address" HorizontalOptions="FillAndExpand"
+                   FontSize="15" Text="{Binding eamilr}"/>
+            <Entry Placeholder="Password" HorizontalOptions="FillAndExpand"
+                   FontSize="15" IsPassword="True" Text="{Binding passwordr}"/>
+            <Button Text="Register" Command="{Binding .}"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
